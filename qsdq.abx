@@ -1,0 +1,15 @@
+---
+exportVersion: "1"
+exportId: "8a7480b1717e5d1d01729d984ec20035"
+name: "qsdq"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  var1: "valeur1"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+provider: "on-prem"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 300
