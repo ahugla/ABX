@@ -1,0 +1,18 @@
+---
+exportVersion: "1"
+exportId: "8a7480b1717e5d1d0172c1d4e416004d"
+name: "Bare metal as a service"
+runtime: "python"
+entrypoint: "handler"
+inputs:
+  FQDN: "hostname"
+  Chassis: 123213
+  Project: "project1"
+  AddtoDNS: "YEs"
+  AddToCMDB: "Yes"
+timeoutSeconds: 180
+deploymentTimeoutSeconds: 600
+actionType: "SCRIPT"
+configuration:
+  const_azure-system_managed_identity: false
+memoryInMB: 300
